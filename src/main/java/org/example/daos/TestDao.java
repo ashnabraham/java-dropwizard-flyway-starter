@@ -14,6 +14,7 @@ public class TestDao {
         try (Connection connection = DatabaseConnector.getConnection()) {
             Statement statement = connection.createStatement();
 
+            //testing
             ResultSet resultSet = statement.executeQuery(
                     "SHOW DATABASES;");
 
