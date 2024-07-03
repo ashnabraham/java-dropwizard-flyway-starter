@@ -16,19 +16,30 @@ public class TestDao {
 
             long start = System.currentTimeMillis();
 
+
             ResultSet resultSet = statement.executeQuery(
                     "SHOW DATABASES;");
-
             long end = System.currentTimeMillis();
+
+
 
 
             System.out.println("total time" + (end - start));
             System.out.println("retrieving database names");
+
+            System.out.println("Total time " + (end - start));
+
+            System.out.println("Retrieving database names");
+
             while (resultSet.next()) {
                 System.out.println(resultSet.getString("Database"));
                 databases.add(resultSet.getString("Database"));
             }
+
             System.out.println("Finished");
+
+            System.out.println("Finished retrieving database names");
+
         }
 
         return databases;
