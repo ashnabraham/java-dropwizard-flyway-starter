@@ -22,7 +22,7 @@ public class TestDao {
            long end = System.currentTimeMillis();
 
 
-           System.out.println("total tigi me"+(end-start));
+           System.out.println("total time" + (end - start));
 
            while (resultSet.next()) {
                 databases.add(resultSet.getString("Database"));
